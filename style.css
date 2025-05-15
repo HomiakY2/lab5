@@ -28,7 +28,6 @@ body.dark-theme header {
     background: linear-gradient(135deg, #2c3e50, #3498db);
 }
 
-/* Виправлення кольору тексту для всіх елементів у нічному режимі */
 body.dark-theme section h2,
 body.dark-theme .column h3,
 body.dark-theme .column p,
@@ -113,7 +112,7 @@ section h2::after {
     position: absolute;
     width: 50px;
     height: 3px;
-    background-color: #e74c3c;
+    background-color: #2ecc71;
     bottom: -5px;
     left: 10px;
 }
