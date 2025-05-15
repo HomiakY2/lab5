@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <header>
+        <h1>Савчук Євгеній Іванович</h1>
+        <p>Email: savchykjenya@gmail.com | Телефон: +380993265103</p>
+        <p>GitHub: github.com/homiaky2</p>
+        <button id="theme-toggle">Переключити тему</button>
+    </header>
+
+    <main>
+        <div class="column-layout">
+            <section class="column">
+                <h2>Про мене</h2>
+                <p>
+                    Вмотивований фахівець у сфері кібербезпеки з особливим інтересом до захисту інформації та роботи з нею. 
+                    Маю глибоке розуміння методів шифрування, управління ключами, а також практичний досвід роботи з сучасними інструментами безпеки.
+                    Крім того, мав практичний досвід роботи в сфері охоронних компаній.
+                </p>
+            </section>
+            <section class="column">
+                <h2>Навички</h2>
+                <ul>
+                    <li>Симетричне та асиметричне шифрування (AES, RSA, ElGamal)</li>
+                    <li>Управління ключами та безпечне зберігання (GnuPG, Keyrings, Hardware Tokens)</li>
+                    <li>Мови програмування: Python, Java, C++</li>
+                    <li>Аналіз трафіку та тестування мереж: Wireshark, Nmap, tcpdump</li>
+                    <li>Операційні системи та середовища: Kali Linux, Ubuntu, Windows</li>
+                    <li>Реалізація цифрових підписів, хеш-функцій, KDF (PBKDF2, bcrypt)</li>
+                    <li>Монтаж та налаштування: охоронних провідних систем (TIRAS, Lun тощо), безпровідних охоронних систем (Ajax Systems)</li>
+                </ul>
+            </section>
+            <section class="column">
+                <h2>Досвід Роботи</h2>
+                <article>
+                    <h3>ПП "Явір-2000"</h3>
+                    <p><strong>2024 – 2025</strong></p>
+                    <ul>
+                        <li>Практичний досвід встановлення охоронних систем</li>
+                        <li>Практичний досвід встановлення протипожежних систем</li>
+                        <li>Підключення різних видів відеоспостереження</li>
+                        <li>Комунікація з клієнтами щодо вибору охоронних та/чи протипожежних сигналізацій</li>
+                        <li>Монтаж охоронних та протипожежних систем</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+
+        <div class="column-layout">
+            <section class="column">
+                <h2>Освіта</h2>
+                <p><strong>Бакалавр з Кібербезпеки</strong> – Національний університет "Львівська політехніка" - 2022-2026рр.</p>
+            </section>
+            <section class="column">
+                <h2>Сертифікати та Курси</h2>
+                <ul>
+                    <li><strong>CompTIA Security+</strong> – підготовка в процесі</li>
+                    <li><strong>Cryptography I</strong> – Coursera, Стенфордський університет</li>
+                    <li><strong>Introduction to Cyber Security</strong> – Cisco Networking Academy</li>
+                    <li><strong>Безпека в інтернеті під час війни: практичний курс</strong> – Prometheus</li>
+                </ul>
+            </section>
+            <section class="column">
+                <h2>Мови</h2>
+                <ul>
+                    <li>Українська – Рідна</li>
+                    <li>Англійська – Середній рівень (B1–B2)</li>
+                    <li>Німецька – Середній рівень (A1–B1)</li>
+                </ul>
+            </section>
+        </div>
+
+        <section id="comments">
+            <h2>Коментарі роботодавців</h2>
+            <div id="comments-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Інформація про систему</h2>
+        <p id="browser-info"></p>
+    </footer>
+
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Зворотний зв’язок</h2>
+            <form action="https://formspree.io/f/xdkgyraw" method="POST">
+                <label for="name">Ім’я:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
